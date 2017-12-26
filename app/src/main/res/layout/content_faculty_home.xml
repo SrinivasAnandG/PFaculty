@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_faculty_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.srinivasanand.pfaculty.faculty_home"
+    tools:showIn="@layout/app_bar_faculty_home">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:id="@+id/profile">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="40dp"
+
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:id="@+id/profilepic"
+                android:src="@drawable/img"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:id="@+id/name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:typeface="monospace"
+                android:id="@+id/email"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraPreview"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtResult"/>
+
+</RelativeLayout>

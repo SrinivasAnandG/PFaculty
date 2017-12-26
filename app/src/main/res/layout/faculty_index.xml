@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Account Login"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/manicon"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_alignParentTop="true">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:id="@+id/valueofkey"
+                    android:drawableTint="#000"
+                    android:hint="Code"
+                    android:inputType="numberPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#d67601"
+                android:text="Validate"
+                android:id="@+id/checkKey2"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/department"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="4dp"
+                android:layout_margin="4dp"
+                android:background="#fff"
+                android:visibility="invisible"
+                android:clickable="true"
+                android:scrollbars="none"/>
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/connect"
+                android:visibility="invisible"
+
+                android:text="Sign with Google"
+
+                android:onClick="signIn"
+
+                android:layout_marginBottom="52dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+            </com.google.android.gms.common.SignInButton>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

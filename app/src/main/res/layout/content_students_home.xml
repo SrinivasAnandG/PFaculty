@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_students_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.srinivasanand.pfaculty.students_home"
+    tools:showIn="@layout/app_bar_students_home">
+
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Search Faculty by Name"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/login_title"
+
+        android:paddingTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:layout_margin="4dp"
+        android:clickable="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:textColorHighlight="#000"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textColorLink="#000"
+            android:hint="Search by name"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/manicon"
+            android:id="@+id/search"
+            android:contentDescription="searchBar"
+            android:layout_gravity="clip_horizontal"/>
+
+    </LinearLayout>
+
+
+    </RelativeLayout>

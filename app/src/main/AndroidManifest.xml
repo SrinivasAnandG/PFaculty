@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.srinivasanand.pfaculty">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/snist"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCEj-lSIFshw-aukEbY4-Mp7b7aU55L5dg" />
+
+        <activity
+            android:name=".students_home"
+            android:label="@string/title_activity_students_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".faculty_home"
+            android:label="@string/title_activity_faculty_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PointFaculty" />
+        <activity android:name=".FacultyManualUpdate" />
+
+        <service android:name=".TrackLocation" />
+
+        <activity android:name=".Chat" />
+        <activity android:name=".Users" />
+        <activity
+            android:name=".send_notification"
+            android:label="@string/title_activity_send_notification"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NotificationsByAdmin"></activity>
+        <activity android:name=".SearchProfile"></activity>
+        <service
+            android:name=".FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

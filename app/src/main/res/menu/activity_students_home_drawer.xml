@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/search_faculty_profile"
+
+            android:title="Search Profile" />
+        <item
+            android:id="@+id/personal_chatting"
+
+            android:title="Personal Chatting" />
+        <item
+            android:id="@+id/Notifications"
+
+            android:title="Notifications" />
+        <item
+            android:id="@+id/logout"
+
+            android:title="Logout" />
+
+
+    </group>
+
+
+
+</menu>
